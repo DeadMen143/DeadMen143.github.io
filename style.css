@@ -1,0 +1,209 @@
+#map {
+    height: 1000px;
+    z-index: 1;
+}
+
+.custom-popup {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 400px;
+    padding: 10px;
+    background-color: white;
+    z-index: 9000;
+}
+.custom-popup p{
+    overflow: auto; 
+}
+.close-button {
+position: absolute;
+top: 5px;
+right: 5px;
+cursor: pointer;
+font-size: 14px;
+color: #000;
+background: none;
+border: none;
+padding: 0;
+line-height: 1;
+z-index: 10;
+}
+/* Стили для меню с гамбургером */
+.hamburger-menu {
+position: relative;
+display: inline-block;
+cursor: pointer;
+margin-right: 10px;
+z-index: 5; /* Добавлено */
+}
+
+.hamburger-menu .bar {
+display: block;
+width: 20px;
+height: 2px;
+margin-bottom: 4px;
+background-color: #000;
+transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger-menu.open .bar:nth-child(1) {
+transform: rotate(45deg) translate(5px, 6px);
+}
+
+.hamburger-menu.open .bar:nth-child(2) {
+opacity: 0;
+}
+
+.hamburger-menu.open .bar:nth-child(3) {
+transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.menu {
+position: absolute;
+top: 100%;
+left: 0;
+z-index: 5; /* Добавлено */
+width: 210px;
+padding: 10px;
+background-color: #fff;
+border: 1px solid #ccc;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+opacity: 0;
+transform: translateY(-10px);
+transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hamburger-menu.open + .menu {
+opacity: 1;
+transform: translateY(0);
+}
+
+.menu a {
+display: block;
+margin-bottom: 5px;
+color: #000;
+text-decoration: none;
+}
+
+/* Стили для примера */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+}
+
+.container {
+padding: 20px;
+position: relative;
+}
+
+h1 {
+margin-bottom: 20px;
+}
+header {
+color: white; /* Изменили цвет текста на темно-серый */
+padding: 20px;
+}
+
+/* Стили для пунктов меню */
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+nav li {
+float: left;
+margin-left: 10px;
+}
+
+nav a {
+display: block;
+background-color: white;
+color: black; /* Изменили цвет текста на темно-серый */
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+nav a:hover {
+background-color: #333; /* Изменили цвет фона при наведении на темно-серый */
+color: #fff; /* Изменили цвет текста при наведении на белый */
+}
+.text-block {
+    background-image: url('background.jpg'); /* Замените 'путь_к_изображению.jpg' на путь к вашему изображению */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+.text-block h1{
+    font-size: 72px;
+}
+.text-block p{
+  font-size: 26px;
+  width: 1000px;
+}
+.content-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .content-block h1{
+  font-size: 76px;
+  }
+  .content-block p{
+    font-size: 26px;
+    line-height: 2;
+    }
+  /* Стили для текста */
+  .content-block .text {
+    flex-basis: 60%;
+  }
+
+  /* Стили для картинок */
+  .content-block .images {
+    flex-basis: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .content-block .images img {
+    width: 48%; /* Изменяем ширину картинок на 48% для двух в ряд */
+    height: 260px;
+    object-fit: cover;
+    
+    margin-bottom: 20px;
+  }
+  .kitchen{
+    
+    line-height: 2;
+    text-align: center;
+    width: 100%;
+  }
+  .kitchen img{
+    width:400px;
+  }
+
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .content {
+    text-align: center;
+    position: relative;
+    color: white;
+    z-index: 1;
+  }

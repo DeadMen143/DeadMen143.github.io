@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карта Бурятии</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="republicInfo.html">Республика Бурятия</a></li>
+        <li><a href="map.html">Карта</a></li>
+        <li><a href="kitchen.html">Кухня</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+  
+  <hr>
+  <div class="container">
+    
+    <h1>Районы</h1>
+    <div class="hamburger-menu" onclick="toggleMenu(this)">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <div class="menu">
+      <a href="#">Окский район</a>
+      <a href="#">Тункинский район</a>
+      <a href="#">Закаменский район</a>
+      <a href="#">Джидинский район</a>     
+      <a href="#">Кабанский район</a>     
+      <a href="#">Селенгинский район</a>      
+      <a href="#">Кяхтинский район</a> 
+      <a href="#">Бичурский район</a>      
+      <a href="#">Иволгинский район</a>      
+      <a href="#">Тарбагатайский район</a>      
+      <a href="#">Прибайкальский район</a>      
+      <a href="#">Мухоршибирский район</a>      
+      <a href="#">Заиграевский район</a>     
+      <a href="#">Кижингинский район</a>      
+      <a href="#">Хоринский район</a>      
+      <a href="#">Баргузинский район</a>      
+      <a href="#">Еравнинский район</a>      
+      <a href="#">Баунтовский Эвенкийский район</a>      
+      <a href="#">Курумканский район</a>     
+      <a href="#">Муйский район</a>      
+      <a href="#">Северо-Байкальский район</a>
+
+    </div>
+  </div>
+  <div>
+    <div id="map">
+    <div id="infoPanel" class="custom-popup">
+        <h2>Подробная информация</h2>
+        <p>Дополнительная информация о метке.</p>
+        <span class="close-button">×</span> <!-- Добавлен элемент для закрытия панели -->
+    </div>
+  </div>
+  </div>
+    
+  </main>
+ <footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="scripts.js"></script>
+
+ </footer>   
+
+</body>
+
+</html>
